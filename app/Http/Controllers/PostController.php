@@ -14,4 +14,10 @@ class PostController extends Controller
       $posts = Post::with('author')->latestFirst()->published()->paginate($this->limit);
       return view("blog.index", compact("posts"));
     }
+
+    public function show($id)
+    {
+      $post = Post::findOrFail($id);
+      return view("blog.show", compact("post"));
+    }
 }
