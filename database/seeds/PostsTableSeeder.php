@@ -20,7 +20,7 @@ class PostsTableSeeder extends Seeder
         $faker = Factory::create();
         $date = Carbon::create(2017,05,31,9);
 
-        for($i=1;$i<=10;$i++)
+        for($i = 1; $i <= 20; $i++)
         {
             $image = "Post_Image_" . rand(1,5). ".jpg";
             $date->addDays(1);
