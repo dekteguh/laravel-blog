@@ -178,6 +178,7 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         GrahamCampbell\Markdown\MarkdownServiceProvider::class,
+        App\Providers\ComposerServiceProvider::class,
 
     ],
 

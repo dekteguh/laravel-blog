@@ -16,6 +16,15 @@ Route::get('/', [
   'as' => 'blog'
 ]);
 
+Route::get('/about', [
+  'uses' => 'CommonController@about',
+  'as' => 'about'
+]);
+
+Route::get('/contact', [
+  'uses' => 'CommonController@contact',
+  'as' => 'contact'
+]);
 
 Route::get('/blog/{post}',[
   'uses' => 'PostController@show',
