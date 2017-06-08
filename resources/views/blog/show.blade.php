@@ -25,7 +25,7 @@
                                   <li><i class="fa fa-comments"></i><a href="#">4 Comments</a></li>
                               </ul>
                           </div>
-                            {{ $post->body }}
+                            {!! $post->body_html !!}
                           </div>
                   </div>
               </article>
@@ -34,11 +34,11 @@
                   <div class="media">
                     <div class="media-left">
                       <a href="#">
-                        <img alt="Author 1" src="/img/author.jpg" class="media-object">
+                        <img alt="{{ $post->author->name }}" src="/img/author.jpg" class="media-object">
                       </a>
                     </div>
                     <div class="media-body">
-                      <h4 class="media-heading"><a href="#">Masaru Edo</a></h4>
+                      <h4 class="media-heading"><a href="#">{{ $post->author->name }}</a></h4>
                       <div class="post-author-count">
                         <a href="#">
                             <i class="fa fa-clone"></i>
