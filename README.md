@@ -10,4 +10,7 @@ Create a blog using laravel framework for work.
 - [x] Using Faker
 - [x] Show list posts
 - [x] Show detail post
-- [x] Slug
+- [x] Slug for detail
+- [x] Categories in sidebar
+- [x] Category using slug
+- [x] Add About Page and Contact Page
